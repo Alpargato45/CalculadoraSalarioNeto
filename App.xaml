@@ -5,14 +5,6 @@
              xmlns:ui="http://schemas.modernwpf.com/2019"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-        <ResourceDictionary>
-            <ResourceDictionary.MergedDictionaries>
-                <ui:ThemeResources />
-                <ui:XamlControlsResources />
-                <!-- Otros diccionarios combinados aquí -->
-            </ResourceDictionary.MergedDictionaries>
-            <!-- Otros recursos de la aplicación aquí -->
-        </ResourceDictionary>
     </Application.Resources>
 </Application>
 
