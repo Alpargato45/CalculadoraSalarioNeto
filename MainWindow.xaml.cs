@@ -18,6 +18,7 @@ namespace CalculadoraSalarioNeto
     public partial class MainWindow : Window
     {
         private int porcentaje = 0;
+        private int numSueldos = 0;
         public MainWindow()
         {
             InitializeComponent();
@@ -38,6 +39,8 @@ namespace CalculadoraSalarioNeto
         }
 
 
-
+        //Cojo el número de sueldos para luego dividir el sueldo dependiendo de las veces que va a cobrar al año
+        private void radioButton12_Checked(object sender, RoutedEventArgs e) {numSueldos = 12;}
+        private void radioButton14_Checked(object sender, RoutedEventArgs e) {numSueldos = 14;}
     }
 }

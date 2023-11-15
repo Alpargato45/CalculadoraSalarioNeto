@@ -364,8 +364,8 @@
 
         <GroupBox Header="Num Pagas" Margin="65,177,0,0" Height="70" VerticalAlignment="Top" HorizontalAlignment="Left" Width="156">
             <StackPanel>
-                <RadioButton x:Name="radioButton12" Content="12 Pagas" FontSize="15" Style="{StaticResource GreenRadioButtonStyle}" Margin="0,0,0,5"/>
-                <RadioButton x:Name="radioButton14" Content="14 Pagas" FontSize="15" Style="{StaticResource GreenRadioButtonStyle}"/>
+                <RadioButton x:Name="radioButton12" Content="12 Pagas" FontSize="15" Style="{StaticResource GreenRadioButtonStyle}" Margin="0,0,0,5" GroupName="paga" Checked="radioButton12_Checked"/>
+                <RadioButton x:Name="radioButton14" Content="14 Pagas" FontSize="15" Style="{StaticResource GreenRadioButtonStyle}" GroupName="paga" Checked="radioButton14_Checked"/>
             </StackPanel>
         </GroupBox>
         <GroupBox Header="Situación Familiar" Margin="272,36,0,0" Height="71" VerticalAlignment="Top" HorizontalAlignment="Left" Width="178">
