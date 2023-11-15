@@ -356,10 +356,10 @@
         <CheckBox x:Name="toggleButtonDiscapacidad" Content="Discapacidad" Style="{StaticResource checkBoxIOS}" Margin="604,54,0,0" Height="35" VerticalAlignment="Top" HorizontalAlignment="Left" Width="59" Checked="toggleButtonDiscapacidad_Checked" />
 
         <GroupBox Header="Salario Bruto" Margin="65,36,0,0" Height="59" VerticalAlignment="Top" HorizontalAlignment="Left" Width="156">
-            <TextBox x:Name="textBoxSalarioBruto" TextWrapping="Wrap" Height="31" Margin="0,0,3,0"/>
+            <TextBox x:Name="textBoxSalarioBruto" TextWrapping="Wrap" Height="31" Margin="0,0,3,0" TextChanged="textBoxSalarioBruto_TextChanged"/>
         </GroupBox>
         <GroupBox Header="Edad" Margin="65,100,0,0" Height="59" VerticalAlignment="Top" HorizontalAlignment="Left" Width="156">
-            <TextBox x:Name="textBoxEdad" TextWrapping="Wrap" Height="31" Margin="0,0,3,0"/>
+            <TextBox x:Name="textBoxEdad" TextWrapping="Wrap" Height="31" Margin="0,0,3,0" TextChanged="textBoxEdad_TextChanged"/>
         </GroupBox>
 
         <GroupBox Header="Num Pagas" Margin="65,177,0,0" Height="70" VerticalAlignment="Top" HorizontalAlignment="Left" Width="156">

@@ -17,8 +17,10 @@ namespace CalculadoraSalarioNeto
 {
     public partial class MainWindow : Window
     {
+        //Creo las variables que luego voy a utilizar para el cálculo
         private int porcentaje = 0;
         private int numSueldos = 0;
+        private int sueldo = 0;
         public MainWindow()
         {
             InitializeComponent();
@@ -71,5 +73,39 @@ namespace CalculadoraSalarioNeto
         {
             numSueldos += -5;
         }
+
+
+        //Método TextBox
+        private void textBoxEdad_TextChanged(object sender, TextChangedEventArgs e) {
+            // Verifico si el contenido del TextBox es un número
+            if (!int.TryParse(textBoxEdad.Text, out int edad))
+            {
+                // Si no es un número, muestro un mensaje de error y limpio el TextBox
+                MessageBox.Show("Por favor, ingrese solo números en el campo de edad.");
+                textBoxEdad.Text = "";
+            }
+            if(edad >= 20 && edad < 50) {
+                numSueldos += 1;
+            }else if (edad >= 50) {
+                numSueldos += -2;
+            }
+        }
+
+        private void textBoxSalarioBruto_TextChanged(object sender, TextChangedEventArgs e) {
+            if (!int.TryParse(textBoxEdad.Text, out int salario)) {
+                MessageBox.Show("Por favor, ingrese solo números en el campo de salario.");
+                textBoxEdad.Text = "";
+            }
+            sueldo = salario;
+            if (salario <= 15000) {
+                numSueldos += 8;
+            }else if (salario > 15000 && salario <= 30000) {
+                numSueldos += 15;
+            }else {
+                numSueldos += 20;
+            }
+        }
+
+
     }
 }
