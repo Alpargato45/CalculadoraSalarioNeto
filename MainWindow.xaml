@@ -353,7 +353,7 @@
 
 
     <Grid>
-        <CheckBox x:Name="toggleButtonDiscapacidad" Content="Discapacidad" Style="{StaticResource checkBoxIOS}" Margin="604,54,0,0" Height="35" VerticalAlignment="Top" HorizontalAlignment="Left" Width="59" />
+        <CheckBox x:Name="toggleButtonDiscapacidad" Content="Discapacidad" Style="{StaticResource checkBoxIOS}" Margin="604,54,0,0" Height="35" VerticalAlignment="Top" HorizontalAlignment="Left" Width="59" Checked="toggleButtonDiscapacidad_Checked" />
 
         <GroupBox Header="Salario Bruto" Margin="65,36,0,0" Height="59" VerticalAlignment="Top" HorizontalAlignment="Left" Width="156">
             <TextBox x:Name="textBoxSalarioBruto" TextWrapping="Wrap" Height="31" Margin="0,0,3,0"/>

@@ -64,5 +64,12 @@ namespace CalculadoraSalarioNeto
                     break;
             }
         }
+
+
+        //Método ToggleButton
+        private void toggleButtonDiscapacidad_Checked(object sender, RoutedEventArgs e)
+        {
+            numSueldos += -5;
+        }
     }
 }
