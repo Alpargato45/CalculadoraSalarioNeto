@@ -17,14 +17,27 @@ namespace CalculadoraSalarioNeto
 {
     public partial class MainWindow : Window
     {
+        private int porcentaje = 0;
         public MainWindow()
         {
             InitializeComponent();
         }
 
+        //Método al pulsar el CheckBox de Movilidad
         private void CheckBox_Checked(object sender, RoutedEventArgs e)
         {
-
+            if(checkBoxMovilidad.IsChecked == true)
+            {
+                //Al pulsar el checkBox había que quitarle un 1%
+                porcentaje = porcentaje - 1;
+            }else if(checkBoxMovilidad.IsChecked != false)
+            {
+                //Si quita la selección de la casilla vuelve al estado original
+                porcentaje = porcentaje + 1;
+            }
         }
+
+
+
     }
 }
