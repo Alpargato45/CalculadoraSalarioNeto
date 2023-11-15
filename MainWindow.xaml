@@ -3,10 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:ui="http://schemas.modernwpf.com/2019"
-        xmlns:local="clr-namespace:CalculadoraSalarioNeto"
         mc:Ignorable="d"
-        ui:WindowHelper.UseModernWindowStyle="True"
         Title="MainWindow" Height="450" Width="800" MinHeight="500" MinWidth="800" MaxHeight="500" MaxWidth="800">
     
     
