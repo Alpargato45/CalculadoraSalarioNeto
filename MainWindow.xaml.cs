@@ -90,7 +90,6 @@ namespace CalculadoraSalarioNeto
                 numSueldos += -2;
             }
         }
-
         private void textBoxSalarioBruto_TextChanged(object sender, TextChangedEventArgs e) {
             if (!int.TryParse(textBoxEdad.Text, out int salario)) {
                 MessageBox.Show("Por favor, ingrese solo números en el campo de salario.");
@@ -106,6 +105,10 @@ namespace CalculadoraSalarioNeto
             }
         }
 
+        private void botonCalcular_Click(object sender, RoutedEventArgs e)
+        {
+            textBlockSalarioSolucion.Visibility = Visibility.Visible;
 
+        }
     }
 }

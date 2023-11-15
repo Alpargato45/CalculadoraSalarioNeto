@@ -378,7 +378,7 @@
         </GroupBox>
         <TextBlock Margin="511,53,0,0" TextWrapping="Wrap" Height="20" VerticalAlignment="Top" HorizontalAlignment="Left" Width="77"><Run Language="es-es" Text="Discapacidad"/></TextBlock>
         <CheckBox x:Name="checkBoxMovilidad" Content="Movilidad Geográfica" Margin="511,100,0,0" Checked="CheckBox_Checked" HorizontalAlignment="Left" Width="186" Height="28" VerticalAlignment="Top"/>
-        <Button x:Name="botonCalcular" Content="Calcular" HorizontalAlignment="Left" Margin="65,280,0,0" VerticalAlignment="Top" Style="{StaticResource BlackRoundButtonStyle}" Width="156" Height="40" />
-        <TextBlock HorizontalAlignment="Left" Height="67" FontSize="25" Margin="285,159,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="303" Visibility="Collapsed"><Run Language="es-es" Text="Calculando tu salario neto...."/><LineBreak/><Run Language="es-es"/></TextBlock>
+        <Button x:Name="botonCalcular" Content="Calcular" HorizontalAlignment="Left" Margin="65,280,0,0" VerticalAlignment="Top" Style="{StaticResource BlackRoundButtonStyle}" Width="156" Height="40" Click="botonCalcular_Click" />
+        <TextBlock x:Name="textBlockSalarioSolucion" HorizontalAlignment="Left" Height="67" FontSize="25" Margin="285,159,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="303" Visibility="Collapsed" ><Run Language="es-es" Text="Calculando tu salario neto...."/><LineBreak/><Run Language="es-es"/></TextBlock>
     </Grid>
 </Window>
