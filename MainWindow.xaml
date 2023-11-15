@@ -369,11 +369,11 @@
             </StackPanel>
         </GroupBox>
         <GroupBox Header="Situación Familiar" Margin="272,36,0,0" Height="71" VerticalAlignment="Top" HorizontalAlignment="Left" Width="178">
-            <ComboBox x:Name="comboboxFamiliar" Height="30" Margin="8,0,8,0" >
-                <ComboBoxItem x:Name="Item1" Content="Soltero"/>
-                <ComboBoxItem x:Name="Item2" Content="Casado"/>
-                <ComboBoxItem x:Name="Item3" Content="Viudo"/>
-                <ComboBoxItem x:Name="Item4" Content="Divorciado"/>
+            <ComboBox x:Name="comboboxFamiliar" Height="30" Margin="8,0,8,0" SelectionChanged="comboboxFamiliar_SelectionChanged" >
+                <ComboBoxItem x:Name="Soltero" Content="Soltero"/>
+                <ComboBoxItem x:Name="Casado" Content="Casado"/>
+                <ComboBoxItem x:Name="Viudo" Content="Viudo"/>
+                <ComboBoxItem x:Name="Divorciado" Content="Divorciado"/>
             </ComboBox>
         </GroupBox>
         <TextBlock Margin="511,53,0,0" TextWrapping="Wrap" Height="20" VerticalAlignment="Top" HorizontalAlignment="Left" Width="77"><Run Language="es-es" Text="Discapacidad"/></TextBlock>
