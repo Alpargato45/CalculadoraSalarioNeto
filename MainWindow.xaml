@@ -4,9 +4,9 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" MinHeight="500" MinWidth="800" MaxHeight="500" MaxWidth="800">
-    
-    
+        Title="MainWindow" Height="450" Width="800" MinHeight="500" MinWidth="800">
+
+
 
     <Window.Resources>
         <Style x:Key="checkBoxIOS" TargetType="{x:Type ToggleButton}">
@@ -353,32 +353,32 @@
 
 
     <Grid>
-        <CheckBox x:Name="toggleButtonDiscapacidad" Content="Discapacidad" Style="{StaticResource checkBoxIOS}" Margin="604,54,137,395" />
+        <CheckBox x:Name="toggleButtonDiscapacidad" Content="Discapacidad" Style="{StaticResource checkBoxIOS}" Margin="604,54,0,0" Height="35" VerticalAlignment="Top" HorizontalAlignment="Left" Width="59" />
 
-        <GroupBox HorizontalAlignment="Left" Height="59" Header="Salario Bruto" Margin="65,36,0,0" VerticalAlignment="Top" Width="156">
-            <TextBox x:Name="textBoxSalarioBruto" HorizontalAlignment="Left" TextWrapping="Wrap" Width="141" Height="31"/>
+        <GroupBox Header="Salario Bruto" Margin="65,36,0,0" Height="59" VerticalAlignment="Top" HorizontalAlignment="Left" Width="156">
+            <TextBox x:Name="textBoxSalarioBruto" TextWrapping="Wrap" Height="31" Margin="0,0,3,0"/>
         </GroupBox>
-        <GroupBox HorizontalAlignment="Left" Height="59" Header="Edad" Margin="65,100,0,0" VerticalAlignment="Top" Width="156">
-            <TextBox x:Name="textBoxEdad" HorizontalAlignment="Left" TextWrapping="Wrap" Width="141" Height="31"/>
+        <GroupBox Header="Edad" Margin="65,100,0,0" Height="59" VerticalAlignment="Top" HorizontalAlignment="Left" Width="156">
+            <TextBox x:Name="textBoxEdad" TextWrapping="Wrap" Height="31" Margin="0,0,3,0"/>
         </GroupBox>
 
-        <GroupBox HorizontalAlignment="Left" Height="70" Header="Num Pagas" Margin="65,177,0,0" VerticalAlignment="Top" Width="156">
+        <GroupBox Header="Num Pagas" Margin="65,177,0,0" Height="70" VerticalAlignment="Top" HorizontalAlignment="Left" Width="156">
             <StackPanel>
                 <RadioButton x:Name="radioButton12" Content="12 Pagas" FontSize="15" Style="{StaticResource GreenRadioButtonStyle}" Margin="0,0,0,5"/>
                 <RadioButton x:Name="radioButton14" Content="14 Pagas" FontSize="15" Style="{StaticResource GreenRadioButtonStyle}"/>
             </StackPanel>
         </GroupBox>
-        <GroupBox HorizontalAlignment="Left" Height="71" Header="Situación Familiar" Margin="272,36,0,0" VerticalAlignment="Top" Width="178">
-            <ComboBox x:Name="comboboxFamiliar" Width="150" HorizontalAlignment="Center" Height="30" >
+        <GroupBox Header="Situación Familiar" Margin="272,36,0,0" Height="71" VerticalAlignment="Top" HorizontalAlignment="Left" Width="178">
+            <ComboBox x:Name="comboboxFamiliar" Height="30" Margin="8,0,8,0" >
                 <ComboBoxItem x:Name="Item1" Content="Soltero"/>
                 <ComboBoxItem x:Name="Item2" Content="Casado"/>
                 <ComboBoxItem x:Name="Item3" Content="Viudo"/>
                 <ComboBoxItem x:Name="Item4" Content="Divorciado"/>
             </ComboBox>
         </GroupBox>
-        <TextBlock HorizontalAlignment="Left" Height="20" Margin="511,53,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="77"><Run Language="es-es" Text="Discapacidad"/></TextBlock>
-        <CheckBox x:Name="checkBoxMovilidad" Content="Movilidad Geográfica" HorizontalAlignment="Left" Height="28" Margin="511,100,0,0" VerticalAlignment="Top" Width="186" Checked="CheckBox_Checked"/>
-        <Button x:Name="botonCalcular" Content="Calcular" HorizontalAlignment="Left" Height="40" Margin="65,280,0,0" VerticalAlignment="Top" Width="156" Style="{StaticResource BlackRoundButtonStyle}" />
+        <TextBlock Margin="511,53,0,0" TextWrapping="Wrap" Height="20" VerticalAlignment="Top" HorizontalAlignment="Left" Width="77"><Run Language="es-es" Text="Discapacidad"/></TextBlock>
+        <CheckBox x:Name="checkBoxMovilidad" Content="Movilidad Geográfica" Margin="511,100,0,0" Checked="CheckBox_Checked" HorizontalAlignment="Left" Width="186" Height="28" VerticalAlignment="Top"/>
+        <Button x:Name="botonCalcular" Content="Calcular" HorizontalAlignment="Left" Margin="65,280,0,0" VerticalAlignment="Top" Style="{StaticResource BlackRoundButtonStyle}" Width="156" Height="40" />
         <TextBlock HorizontalAlignment="Left" Height="67" FontSize="25" Margin="285,159,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="303" Visibility="Collapsed"><Run Language="es-es" Text="Calculando tu salario neto...."/><LineBreak/><Run Language="es-es"/></TextBlock>
     </Grid>
 </Window>
