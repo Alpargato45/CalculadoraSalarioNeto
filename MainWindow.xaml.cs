@@ -123,7 +123,7 @@ namespace CalculadoraSalarioNeto
             textBlockSalarioSolucion.Visibility = Visibility.Visible;
             await Task.Delay(2000); // Pauso la ejecución por 2 segundos
             double cuenta;
-            cuenta = sueldo * (porcentaje/100.0);
+            cuenta = sueldo - sueldo * (porcentaje/100.0);
             cuenta = cuenta / numSueldos;
             textBlockSalarioSolucion.Text = "Tu salario es de: " + cuenta.ToString("0.00") + " euros.";
 
