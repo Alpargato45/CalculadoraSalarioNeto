@@ -93,7 +93,7 @@ namespace CalculadoraSalarioNeto
         private async void botonCalcular_Click(object sender, RoutedEventArgs e)
         {
             //Si no están llenos algunos campos necesarios salta un error
-            if(textBoxSalarioBruto.Text == null || textBoxEdad == null || comboboxFamiliar.SelectedItem == null || (radioButton12.IsChecked == false && radioButton14.IsChecked == false)) {
+            if(textBoxSalarioBruto.Text == "" || textBoxEdad.Text == "" || comboboxFamiliar.SelectedItem == null || (radioButton12.IsChecked == false && radioButton14.IsChecked == false)) {
                 MessageBox.Show("Has dejado campos sin introducir, por favor, introduce todos los campos antes de continuar.");
                 return;
             }
