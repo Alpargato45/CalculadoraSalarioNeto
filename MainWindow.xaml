@@ -8,6 +8,7 @@
 
 
 
+
     <Window.Resources>
         <Style x:Key="checkBoxIOS" TargetType="{x:Type ToggleButton}">
             <Setter Property="Template">

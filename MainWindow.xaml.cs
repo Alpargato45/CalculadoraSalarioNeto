@@ -2,6 +2,7 @@
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Media.Imaging;
 
 namespace CalculadoraSalarioNeto
 {
@@ -11,7 +12,11 @@ namespace CalculadoraSalarioNeto
         private double porcentaje = 0;
         private int numSueldos = 0;
         private double sueldo = 0;
-        public MainWindow() { InitializeComponent(); }
+        public MainWindow() { 
+            InitializeComponent();
+            Uri iconUri = new Uri("logoCalculadora.png", UriKind.RelativeOrAbsolute);
+            this.Icon = BitmapFrame.Create(iconUri);
+        }
 
         //Método al pulsar el CheckBox de Movilidad
         private void CheckBox_Checked(object sender, RoutedEventArgs e) { porcentaje += - 1; }
